@@ -1,1 +1,455 @@
-# ristonext-policy
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — RistoNext</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #e8c97a;
+      --dark: #1a1a1a;
+      --gray: #595959;
+      --light-gray: #f5f5f2;
+      --border: #e0ddd6;
+    }
+
+```
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--light-gray);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+header {
+  background: var(--dark);
+  padding: 2rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid var(--gold);
+}
+
+.logo-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo-ring {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+.logo-sub {
+  color: var(--gold);
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: block;
+  margin-top: -2px;
+}
+
+.hero {
+  background: var(--dark);
+  color: white;
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero p {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 1.5rem auto;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.toc {
+  background: white;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.toc h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.toc ol {
+  padding-left: 1.2rem;
+}
+
+.toc li {
+  margin-bottom: 0.4rem;
+}
+
+.toc a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.toc a:hover { color: var(--gold); }
+
+.section {
+  background: white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  scroll-margin-top: 80px;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: var(--dark);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--dark);
+}
+
+.section p {
+  color: var(--gray);
+  font-size: 0.92rem;
+  margin-bottom: 0.8rem;
+}
+
+.section ul, .section ol {
+  color: var(--gray);
+  font-size: 0.92rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.section li { margin-bottom: 0.4rem; }
+
+.section a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.section a:hover { text-decoration: underline; }
+
+.badge {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.contact-box {
+  background: var(--dark);
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-box p { color: #aaa; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.contact-box a { color: var(--gold); font-size: 1rem; font-weight: 500; }
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .section { padding: 1.5rem; }
+  .hero { padding: 2.5rem 1rem 2rem; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-circle">
+    <div class="logo-ring">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M4 14L10 4L16 14" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <span class="logo-text">RistoNext</span>
+      <span class="logo-sub">Strategy &amp; Management</span>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Privacy <span>Policy</span></h1>
+  <div class="gold-divider"></div>
+  <p>Ultimo aggiornamento: 26 febbraio 2026</p>
+</div>
+
+<div class="container">
+
+  <!-- Intro -->
+
+  <div class="section">
+    <div class="badge">Informativa</div>
+    <p>La presente Informativa sulla Privacy descrive come <strong>Michele Ricciardi</strong> ("noi", "ci" o "nostro") accede, raccoglie, archivia, utilizza e/o condivide le informazioni personali degli utenti quando utilizzano i nostri servizi, inclusa l'applicazione mobile <strong>RistoNext</strong>.</p>
+    <p>Per domande o dubbi, puoi contattarci a: <a href="mailto:ristonext@outlook.com">ristonext@outlook.com</a></p>
+  </div>
+
+  <!-- TOC -->
+
+  <div class="toc">
+    <h2>Indice</h2>
+    <ol>
+      <li><a href="#s1">Quali informazioni raccogliamo?</a></li>
+      <li><a href="#s2">Come elaboriamo le tue informazioni?</a></li>
+      <li><a href="#s3">Su quali basi legali ci basiamo?</a></li>
+      <li><a href="#s4">Con chi condividiamo le informazioni?</a></li>
+      <li><a href="#s5">Siti web di terze parti</a></li>
+      <li><a href="#s6">Usiamo cookie e tecnologie di tracciamento?</a></li>
+      <li><a href="#s7">Per quanto tempo conserviamo le informazioni?</a></li>
+      <li><a href="#s8">Come proteggiamo le informazioni?</a></li>
+      <li><a href="#s9">Quali sono i tuoi diritti sulla privacy?</a></li>
+      <li><a href="#s10">Controlli Do-Not-Track</a></li>
+      <li><a href="#s11">Aggiornamenti a questa informativa</a></li>
+      <li><a href="#s12">Come contattarci</a></li>
+      <li><a href="#s13">Come richiedere, aggiornare o cancellare i dati</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+
+  <div class="section" id="s1">
+    <h2>1. Quali informazioni raccogliamo?</h2>
+    <h3>Informazioni fornite da te</h3>
+    <p>Raccogliamo le informazioni personali che ci fornisci volontariamente quando ti registri, esprimi interesse per i nostri servizi o ci contatti. Queste includono:</p>
+    <ul>
+      <li>Nome e cognome</li>
+      <li>Numero di telefono</li>
+      <li>Indirizzo email</li>
+      <li>Titolo professionale</li>
+      <li>Nome utente e password</li>
+      <li>Preferenze di contatto</li>
+      <li>Dati di autenticazione</li>
+      <li>Numeri di carta di credito/debito e indirizzi di fatturazione</li>
+    </ul>
+    <p><strong>Informazioni sensibili:</strong> Non raccogliamo informazioni sensibili.</p>
+
+```
+<h3>Dati dell'applicazione</h3>
+<p>Utilizzando l'app, potremmo raccogliere:</p>
+<ul>
+  <li><em>Dati del dispositivo mobile:</em> ID dispositivo, modello, sistema operativo, indirizzo IP, tipo di browser.</li>
+  <li><em>Notifiche push:</em> Potremmo richiedere l'invio di notifiche push. Puoi disattivarle nelle impostazioni del dispositivo.</li>
+</ul>
+
+<h3>Google API</h3>
+<p>L'utilizzo delle informazioni ricevute dalle API di Google è conforme alla <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>.</p>
+```
+
+  </div>
+
+  <!-- 2 -->
+
+  <div class="section" id="s2">
+    <h2>2. Come elaboriamo le tue informazioni?</h2>
+    <p>Elaboriamo le tue informazioni per:</p>
+    <ul>
+      <li>Creare e gestire il tuo account</li>
+      <li>Raccogliere il tuo feedback</li>
+      <li>Inviarti comunicazioni di marketing (con tuo consenso)</li>
+      <li>Mostrarti pubblicità personalizzata</li>
+      <li>Proteggere i nostri servizi da frodi</li>
+      <li>Identificare le tendenze di utilizzo per migliorare il servizio</li>
+      <li>Valutare l'efficacia delle nostre campagne</li>
+      <li>Proteggere gli interessi vitali degli utenti</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+
+  <div class="section" id="s3">
+    <h2>3. Su quali basi legali ci basiamo?</h2>
+    <p>Elaboriamo le tue informazioni solo quando abbiamo una base giuridica valida. Nel contesto del GDPR (UE) e UK GDPR, ci basiamo su:</p>
+    <ul>
+      <li><strong>Consenso:</strong> quando ci hai dato il permesso esplicito.</li>
+      <li><strong>Interessi legittimi:</strong> per migliorare i servizi, prevenire frodi, supportare il marketing.</li>
+      <li><strong>Obblighi legali:</strong> quando richiesto dalla legge.</li>
+      <li><strong>Interessi vitali:</strong> per proteggere la sicurezza di una persona.</li>
+    </ul>
+  </div>
+
+  <!-- 4 -->
+
+  <div class="section" id="s4">
+    <h2>4. Con chi condividiamo le informazioni?</h2>
+    <p>Potremmo condividere i tuoi dati con fornitori terzi che operano per nostro conto, tra cui:</p>
+    <ul>
+      <li>Reti pubblicitarie e piattaforme di retargeting</li>
+      <li>Programmi di marketing di affiliazione</li>
+      <li>Piattaforme AI</li>
+      <li>Servizi di analisi dati</li>
+      <li>Strumenti di collaborazione e comunicazione</li>
+      <li>Servizi cloud e storage</li>
+      <li>Strumenti finanziari e contabili</li>
+      <li>Processori di pagamento</li>
+      <li>Servizi di autenticazione account</li>
+      <li>Provider di hosting</li>
+    </ul>
+    <p>Condividiamo dati anche con le API di Google Maps (mail, cellulare, regione, dati CV) e con partner commerciali per offrirti prodotti o promozioni.</p>
+  </div>
+
+  <!-- 5 -->
+
+  <div class="section" id="s5">
+    <h2>5. Siti web di terze parti</h2>
+    <p>I nostri servizi possono contenere link a siti di terze parti. Non siamo responsabili delle loro pratiche di privacy. Ti invitiamo a leggere le relative informative prima di condividere dati personali.</p>
+  </div>
+
+  <!-- 6 -->
+
+  <div class="section" id="s6">
+    <h2>6. Usiamo cookie e tecnologie di tracciamento?</h2>
+    <p>Sì. Utilizziamo cookie e tecnologie simili per mantenere la sicurezza, salvare preferenze e analizzare l'utilizzo. Permettiamo anche a terze parti di usare queste tecnologie per scopi pubblicitari. Puoi gestire i cookie nelle impostazioni del browser.</p>
+  </div>
+
+  <!-- 7 -->
+
+  <div class="section" id="s7">
+    <h2>7. Per quanto tempo conserviamo le informazioni?</h2>
+    <p>Conserviamo i tuoi dati personali per tutto il periodo in cui hai un account attivo con noi. Quando non è più necessario, cancelliamo o anonimizziamo le informazioni, salvo obblighi legali contrari.</p>
+  </div>
+
+  <!-- 8 -->
+
+  <div class="section" id="s8">
+    <h2>8. Come proteggiamo le informazioni?</h2>
+    <p>Adottiamo misure tecniche e organizzative adeguate per proteggere i tuoi dati. Tuttavia, nessuna trasmissione su Internet è garantita al 100% sicura. Ti invitiamo ad accedere ai servizi solo in ambienti sicuri.</p>
+  </div>
+
+  <!-- 9 -->
+
+  <div class="section" id="s9">
+    <h2>9. Quali sono i tuoi diritti sulla privacy?</h2>
+    <p>Se ti trovi nello Spazio Economico Europeo (SEE), nel Regno Unito o in Svizzera, hai il diritto di:</p>
+    <ul>
+      <li>Accedere e ottenere una copia dei tuoi dati</li>
+      <li>Richiedere la rettifica o la cancellazione</li>
+      <li>Limitare il trattamento</li>
+      <li>Portabilità dei dati</li>
+      <li>Opporti al trattamento automatizzato</li>
+    </ul>
+    <p>Puoi revocare il consenso o disiscriverti dalle comunicazioni di marketing in qualsiasi momento. Per modificare o eliminare il tuo account, accedi alle impostazioni del profilo nell'app.</p>
+    <p>Per domande: <a href="mailto:ristonext@outlook.com">ristonext@outlook.com</a></p>
+  </div>
+
+  <!-- 10 -->
+
+  <div class="section" id="s10">
+    <h2>10. Controlli Do-Not-Track</h2>
+    <p>Attualmente non rispondiamo ai segnali DNT dei browser, poiché non esiste uno standard uniforme riconosciuto. Se verrà adottato uno standard, aggiorneremo questa informativa.</p>
+  </div>
+
+  <!-- 11 -->
+
+  <div class="section" id="s11">
+    <h2>11. Aggiornamenti a questa informativa</h2>
+    <p>Potremmo aggiornare questa informativa periodicamente. La data di revisione sarà indicata in cima alla pagina. Ti invitiamo a consultarla regolarmente.</p>
+  </div>
+
+  <!-- 12 -->
+
+  <div class="section" id="s12">
+    <h2>12. Come contattarci</h2>
+    <div class="contact-box">
+      <p>Per qualsiasi domanda su questa informativa:</p>
+      <a href="mailto:ristonext@outlook.com">ristonext@outlook.com</a>
+      <p style="margin-top:1rem;">Michele Ricciardi<br>via sofia — Capanni, 47039<br>Italia</p>
+    </div>
+  </div>
+
+  <!-- 13 -->
+
+  <div class="section" id="s13">
+    <h2>13. Come richiedere, aggiornare o cancellare i dati</h2>
+    <p>In base alle leggi applicabili, puoi richiedere l'accesso, la correzione o la cancellazione dei tuoi dati personali inviando una <a href="https://app.termly.io/dsar/8848ae17-8d43-4908-b8ea-fbb67b1bbed8" target="_blank">richiesta di accesso ai dati</a> oppure contattandoci direttamente.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 RistoNext — Michele Ricciardi · Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
+
+
+
+
+
